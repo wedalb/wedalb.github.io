@@ -1,6 +1,7 @@
 {
   "name": "spline-react",
   "version": "1.0.0",
+  "homepage": "https://wedalb.github.io/wedalb.github.io",
   "description": "Scene exported with Spline",
   "keywords": [],
   "main": "src/index.js",
