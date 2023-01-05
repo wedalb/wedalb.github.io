@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/wedalb.github.io/static/css/main.4ee88b9d.css",
+    "main.js": "/wedalb.github.io/static/js/main.8cda254d.js",
+    "static/js/227.c91a0ab9.chunk.js": "/wedalb.github.io/static/js/227.c91a0ab9.chunk.js",
+    "static/js/526.f30f4e94.chunk.js": "/wedalb.github.io/static/js/526.f30f4e94.chunk.js",
+    "static/js/232.68f69bcc.chunk.js": "/wedalb.github.io/static/js/232.68f69bcc.chunk.js",
+    "static/js/237.9e694ad9.chunk.js": "/wedalb.github.io/static/js/237.9e694ad9.chunk.js",
+    "index.html": "/wedalb.github.io/index.html",
+    "main.4ee88b9d.css.map": "/wedalb.github.io/static/css/main.4ee88b9d.css.map",
+    "main.8cda254d.js.map": "/wedalb.github.io/static/js/main.8cda254d.js.map",
+    "227.c91a0ab9.chunk.js.map": "/wedalb.github.io/static/js/227.c91a0ab9.chunk.js.map",
+    "526.f30f4e94.chunk.js.map": "/wedalb.github.io/static/js/526.f30f4e94.chunk.js.map",
+    "232.68f69bcc.chunk.js.map": "/wedalb.github.io/static/js/232.68f69bcc.chunk.js.map",
+    "237.9e694ad9.chunk.js.map": "/wedalb.github.io/static/js/237.9e694ad9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ee88b9d.css",
+    "static/js/main.8cda254d.js"
+  ]
+}
