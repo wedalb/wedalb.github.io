@@ -1,4 +1,7 @@
 # wedalb.github.io
 My personal website
 
-Here I explain what I do. This website is under construction!
+## Tools I used for this
+
+- HTML, CSS, JS
+- Spline 
