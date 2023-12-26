@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heidi Albarazi</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;800;900&display=swap" rel="stylesheet"> <!-- Montserrat Font -->
 </head>
 <body>
   <nav class="sticky-nav">
     <div class="nav-brand">
       <img src="./src/images/websitelogo.png" alt="Logo"> <!-- Adjust the logo path and size -->
-      <h1>Website is under construction!!</h1>
+      <p class="nav-title">Heidi Albarazi</p>
     </div>
     <div class="nav-links">
       <a href="#hero">Home</a>
       <a href="#about-me">About Me</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Hackathon Projects</a>
       <a href="#design-portfolio">Design Portfolio</a>
       <a href="#contact">Contact</a>
     </div>
@@ -25,16 +27,28 @@
 
 
   <section id="hero">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
-    <spline-viewer url="https://prod.spline.design/c9Olyxl91pBSm5fW/scene.splinecode"></spline-viewer>
+    <div id="spline-container">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/OiOOEWGdriCxuHHz/scene.splinecode"></spline-viewer>
+    </div>
+    <div id="transparent-div"></div> <!-- Add the transparent div -->
   </section>
+
 
 
 
   <section id="about-me">
     <div class="about-me-content">
-      <h1>This website is under construction!</h1>
-      <p>If you are interested in this website please come back again in 2 days.</p>
+      <h1>About Me</h1>
+      <p>
+        Hello,
+        I am Heidi Albarazi.
+      </p>
+    </div>
+    <div class="spline-container">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/WAcUdY3HjhJHZKfD/scene.splinecode"></spline-viewer>
+
     </div>
   </section>
 
@@ -44,8 +58,219 @@
 
 
   <section id="projects">
-    <h1>Projects</h1>
-    <!-- Content for Projects -->
+    <h1>Hackathon Projects</h1>
+    <div class="card-scroll-container">
+      <div class="card-container">
+
+
+        <a href="https://devpost.com/software/foodiebag" target="_blank" class="card">
+          <img src="./src/images/hackathons/hackatum2023/hackatum2023_card.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">HackaTUM 2023</h5>
+            <p class="card-text">
+              We built an iOS App that uses a tiktok style recipee recommendation system. The recipees are AI-generated and will be displayed in a how-to tutorial video.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Open AI API</div>
+              <div class="chip">Python</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://youtu.be/3Suiyukxg4M" target="_blank" class="card">
+          <img src="./src/images/hackathons/junctionhack/junctionhack_card.jpg" class="card-img-top" alt="Junction Picture">
+          <div class="card-body">
+            <h5 class="card-title">Junction Hack 2023 Hellsinki</h5>
+            <p class="card-text">
+              We developed a concept for a smart watch game and app for children to motivate them to stay active.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Figma</div>
+              <div class="chip">Spline</div>
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="https://concast.webflow.io/" target="_blank" class="card">
+          <img src="./src/images/hackathons/cassinihack/cassini_card.JPEG" class="card-img-top" alt="Cassini Hackathon image">
+          <div class="card-body">
+            <h5 class="card-title">Cassini Hackathon</h5>
+            <p class="card-text">
+              In this hackathon we tackled the challenge of estimating real time population using satelite
+              data and image processing as well as data analysis. We build a frontend in Streamlit. This use case is especially useful in estimating war population, f.e. in the ukraine.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Python</div>
+              <div class="chip">Streamlit</div>
+              <div class="chip">Webflow</div>
+            </div>
+          </div>
+        </a>
+
+        <div class="card">
+          <img src="./src/images/hackathons/baselhack/baselhack_card.jpg" class="card-img-top" alt="Baselhack Picture">
+          <div class="card-body">
+            <h5 class="card-title">BaselHack 2023</h5>
+            <p class="card-text">
+              We built a Progressive Web-App (PWA) in Ionic and React that matches co-workers to a "lunch date". The time and location is set by our app and you will be matched with a person that has a similar personality to you.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Python</div>
+              <div class="chip">Ionic</div>
+              <div class="chip">React</div>
+              <div class="chip">Spline</div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/futurepynk/futurepynk_card.JPEG" class="card-img-top" alt="Futurepynk Picture">
+          <div class="card-body">
+            <h5 class="card-title">Futurepynk</h5>
+            <p class="card-text">
+              We built an iOS App that displays air pollution in Hamburg and shows you educational content on how to deal with air pollution issues.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Python</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/planetariumhack/planetariumhack_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Planetarium Hackathon Bochum</h5>
+            <p class="card-text">
+              We built an AR-based escape game that featured an app that runs on the dome inside of the planetarium and an android AR app that you use to solve puzzles.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Unity</div>
+              <div class="chip">Blender</div>
+              <div class="chip">Python</div>
+              <div class="chip">C#</div>
+              <div class="chip">AR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/ethmunich/ethmunich_card.png" class="card-img-top" alt="Ethereum Hack Picture">
+          <div class="card-body">
+            <h5 class="card-title">Ethereum Hackathon</h5>
+            <p class="card-text">
+              We built a Progressive Web App (PWA) using Ionic and React that shows you service-jobs in your area which you can earn an Ethereum Token for, called "Karma". The interaction with the Ethereum Blockchain over Metamask is handled with Solidity
+            </p>
+            <div class="chip-container">
+              <div class="chip">Ionic</div>
+              <div class="chip">React</div>
+              <div class="chip">CSS</div>
+              <div class="chip">Javascript</div>
+              <div class="chip">Styled Components</div>
+              <div class="chip">Solidity</div>
+              <div class="chip">Ethereum</div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/startsporthack/startsporthack_card.JPG" class="card-img-top" alt="Start Sport Hackathon">
+          <div class="card-body">
+            <h5 class="card-title">Start Sport Hackathon</h5>
+            <p class="card-text">
+              We used brain data gathered from an EEG to controll a mechanic hand that is powered by an arduino, with your own thoughts. The hand is made out of cardboard as a prototype
+            </p>
+            <div class="chip-container">
+              <div class="chip">Medical Knowledge</div>
+              <div class="chip">Neuroscience</div>
+              <div class="chip">Arduino</div>
+              <div class="chip">Python</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/tum-ai-makeathon/tumaimakeathon_card.JPG" class="card-img-top" alt="TUM-ai Makeathon Image">
+          <div class="card-body">
+            <h5 class="card-title">Tum-ai Makeathon</h5>
+            <p class="card-text">
+              We built a chrome extension that uses AI to detect and explain sexist content. The ai model is trained by ourself. This project enabled us to be finalists at the makeathon.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Chrome Extension</div>
+              <div class="chip">HTML</div>
+              <div class="chip">CSS</div>
+              <div class="chip">JavaScript</div>
+              <div class="chip">Python</div>
+              <div class="chip">Tensorflow</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/starthack2023/starthack2023_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Start Hack 2023</h5>
+            <p class="card-text">
+              We built an Android App in Kotlin that displays an animated avatar chatbot that helps elderly people with lonelyness.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Spline</div>
+              <div class="chip">3D Animations</div>
+              <div class="chip">Kotlin</div>
+              <div class="chip">OpenAI API</div>
+              <div class="chip">Android</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/teghackathon/teghackathon_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Teg Hackathon 2023</h5>
+            <p class="card-text">
+              We created a pitch and business plan and a prototype in Figma to display the potential of a gamified fitness app</p>
+            <div class="chip-container">
+              <div class="chip">Figma</div>
+              <div class="chip">Business Development</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/hackatum2022/hackatum2022_card.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">HackaTUM 2022</h5>
+            <p class="card-text">
+              We built an iOS App that lets users attach notes to any building and therefore interact more with the city and community. The texts are then classified using our ai model
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Python</div>
+              <div class="chip">Java</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
   </section>
 
 
@@ -53,15 +278,28 @@
 
 
   <section id="design-portfolio">
-    <h2>Design Portfolio</h2>
-      <!-- Add more grid items as needed -->
+    <h1>Design Portfolio</h1>
+    <div class="grid">
+      <div class="column">
+        <div class="spline-background">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/xNo45bj7-OxZaVgX/scene.splinecode"></spline-viewer>
+        </div>
+      </div>
+      <div class="column">
+       Some text about the Spline thing
+      </div>
+    </div>
+
   </section>
 
 
 
   <section id="contact">
-    <h2>Contact</h2>
-    <!-- Content for Contact -->
+    <h1>Contact</h1>
+
+
+
   </section>
 
 

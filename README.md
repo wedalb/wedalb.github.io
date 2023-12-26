@@ -5,3 +5,4 @@ My personal website
 
 - HTML, CSS, JS
 - Spline 
+- Bootstrap
