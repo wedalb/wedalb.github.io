@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heidi Albarazi</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;800;900&display=swap" rel="stylesheet"> <!-- Montserrat Font -->
 </head>
 <body>
   <nav class="sticky-nav">
     <div class="nav-brand">
       <img src="./src/images/websitelogo.png" alt="Logo"> <!-- Adjust the logo path and size -->
-      <h1>Heidi Albarazi</h1>
+      <p class="nav-title">Heidi Albarazi</p>
     </div>
     <div class="nav-links">
       <a href="#hero">Home</a>
       <a href="#about-me">About Me</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Hackathon Projects</a>
       <a href="#design-portfolio">Design Portfolio</a>
       <a href="#contact">Contact</a>
     </div>
@@ -25,16 +27,23 @@
 
 
   <section id="hero">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
-    <spline-viewer url="https://prod.spline.design/c9Olyxl91pBSm5fW/scene.splinecode"></spline-viewer>
+    <div id="spline-container">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/OiOOEWGdriCxuHHz/scene.splinecode"></spline-viewer>
+    </div>
+    <div id="transparent-div"></div> <!-- Add the transparent div -->
   </section>
+
 
 
 
   <section id="about-me">
     <div class="about-me-content">
       <h1>About Me</h1>
-      <p>Your text goes here. This is the description for the About Me section...</p>
+      <p>
+        Hello,
+        I am Heidi Albarazi.
+      </p>
     </div>
     <div class="spline-container">
       <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
@@ -48,8 +57,208 @@
 
 
   <section id="projects">
-    <h1>Projects</h1>
-    <!-- Content for Projects -->
+    <h1>Hackathon Projects</h1>
+    <div class="card-scroll-container">
+      <div class="card-container">
+
+
+        <a href="https://devpost.com/software/foodiebag" target="_blank" class="card">
+          <img src="./src/images/hackathons/hackatum2023/hackatum2023_card.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">HackaTUM 2023</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Open AI API</div>
+              <div class="chip">Python</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://youtu.be/3Suiyukxg4M" target="_blank" class="card">
+          <img src="./src/images/hackathons/junctionhack/junctionhack_card.jpg" class="card-img-top" alt="Junction Picture">
+          <div class="card-body">
+            <h5 class="card-title">Junction Hack 2023 Hellsinki</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Figma</div>
+              <div class="chip">Spline</div>
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="https://concast.webflow.io/" target="_blank" class="card">
+          <img src="./src/images/hackathons/cassinihack/cassini_card.JPEG" class="card-img-top" alt="Cassini Hackathon image">
+          <div class="card-body">
+            <h5 class="card-title">Cassini Hackathon</h5>
+            <p class="card-text">
+              In this hackathon we tackled the challenge of estimating real time population using satelite
+              data and image processing as well as data analysis. We build a frontend in Streamlit. This use case is especially useful in estimating war population, f.e. in the ukraine.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Python</div>
+              <div class="chip">Streamlit</div>
+              <div class="chip">Webflow</div>
+            </div>
+          </div>
+        </a>
+
+        <div class="card">
+          <img src="./src/images/hackathons/baselhack/baselhack_card.jpg" class="card-img-top" alt="Baselhack Picture">
+          <div class="card-body">
+            <h5 class="card-title">BaselHack 2023</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Python</div>
+              <div class="chip">some python tool</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/futurepynk/futurepynk_card.JPEG" class="card-img-top" alt="Futurepynk Picture">
+          <div class="card-body">
+            <h5 class="card-title">Futurepynk</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Open AI API</div>
+              <div class="chip">Python</div>
+              <div class="chip">Java</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/planetariumhack/planetariumhack_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Planetarium Hackathon Bochum</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Spline</div>
+              <div class="chip">3D Animations</div>
+              <div class="chip">Kotlin</div>
+              <div class="chip">OpenAI API</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/ethmunich/ethmunich_card.png" class="card-img-top" alt="Ethereum Hack Picture">
+          <div class="card-body">
+            <h5 class="card-title">Ethereum Hackathon</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Ionic</div>
+              <div class="chip">React</div>
+              <div class="chip">CSS</div>
+              <div class="chip">Javascript</div>
+              <div class="chip">Styled Components</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/startsporthack/startsporthack_card.JPG" class="card-img-top" alt="Start Sport Hackathon">
+          <div class="card-body">
+            <h5 class="card-title">Start Sport Hackathon</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Medical Knowledge</div>
+              <div class="chip">Neuroscience</div>
+              <div class="chip">Arduino</div>
+              <div class="chip">Python</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/tum-ai-makeathon/tumaimakeathon_card.JPG" class="card-img-top" alt="TUM-ai Makeathon Image">
+          <div class="card-body">
+            <h5 class="card-title">HackaTUM 2022</h5>
+            <p class="card-text">
+              This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.
+            </p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Open AI API</div>
+              <div class="chip">Python</div>
+              <div class="chip">Java</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/starthack2023/starthack2023_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Start Hack 2023</h5>
+            <p class="card-text">This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.</p>
+            <div class="chip-container">
+              <div class="chip">Spline</div>
+              <div class="chip">3D Animations</div>
+              <div class="chip">Kotlin</div>
+              <div class="chip">OpenAI API</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/teghackathon/teghackathon_card.JPG" class="card-img-top" alt="Group Picture">
+          <div class="card-body">
+            <h5 class="card-title">Teg Hackathon 2023</h5>
+            <p class="card-text">This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.</p>
+            <div class="chip-container">
+              <div class="chip">Spline</div>
+              <div class="chip">3D Animations</div>
+              <div class="chip">Kotlin</div>
+              <div class="chip">OpenAI API</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/hackathons/hackatum2022/hackatum2022_card.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">HackaTUM 2022</h5>
+            <p class="card-text">This is a sample card with an image at the top and a description underneath. You can customize the content and style as needed.</p>
+            <div class="chip-container">
+              <div class="chip">Swift</div>
+              <div class="chip">SwiftUI</div>
+              <div class="chip">Open AI API</div>
+              <div class="chip">Python</div>
+              <div class="chip">Java</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
   </section>
 
 
@@ -57,25 +266,28 @@
 
 
   <section id="design-portfolio">
-    <h2>Design Portfolio</h2>
+    <h1>Design Portfolio</h1>
     <div class="grid">
-      <div class="grid-item">
-        <img src="path-to-your-image1.jpg" alt="Project Image">
-        <p>Project Description 1</p>
+      <div class="column">
+        <div class="spline-background">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
+          <spline-viewer url="https://prod.spline.design/xNo45bj7-OxZaVgX/scene.splinecode"></spline-viewer>
+        </div>
       </div>
-      <div class="grid-item">
-        <img src="path-to-your-image2.jpg" alt="Project Image">
-        <p>Project Description 2</p>
+      <div class="column">
+       Some text about the Spline thing
       </div>
-      <!-- Add more grid items as needed -->
     </div>
+
   </section>
 
 
 
   <section id="contact">
-    <h2>Contact</h2>
-    <!-- Content for Contact -->
+    <h1>Contact</h1>
+
+
+
   </section>
 
 

@@ -7,10 +7,41 @@ body, html {
     background-color: black;
     color: white;
     box-sizing: border-box; /* New addition */
+
 }
 h1 {
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 3em; /* Adjust the size as needed */
+
+    text-align: center;
+    width: 100%; /* Ensures text alignment works for multiple lines */
+    background: linear-gradient(to right, #A9D6FF, #E9A9FF); /* Example gradient from pink to orange */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-top: 30px;
 }
+
+
+
+/* Change the scrollbar's width, height, and color */
+::-webkit-scrollbar {
+    width: 10px; /* Change the width as needed */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #100f12; /* Change the thumb background color */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Customize the scrollbar track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+    background: black; /* Change the track background color */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+
 
 h2 {
     font-weight: 500;
@@ -23,6 +54,7 @@ p {
 *, *::before, *::after {
     box-sizing: inherit; /* New addition */
 }
+
 
 .sticky-nav {
     background-color: black;
@@ -45,7 +77,7 @@ p {
     height: 30px; /* Adjust as needed */
 }
 
-.nav-brand h1 {
+.nav-title{
     margin: 0 0 0 20px; /* Adjust the margin to create some space between the image and text */
     font-size: 1.3em; /* Adjust the font size as needed */
     font-weight: 800;
@@ -56,9 +88,11 @@ p {
 
     letter-spacing: normal; /* Initial letter spacing */
     transition: letter-spacing 0.3s ease; /* Transition effect */
+
+
 }
 
-.nav-brand h1:hover{
+.nav-title:hover{
     letter-spacing: 3px;
 }
 
@@ -68,20 +102,36 @@ p {
     padding: 10px;
     display: inline-block;
     font-weight: 100;
+    font-size: 1rem; /* Add a consistent font size */
+
+
 
 }
 
 .nav-links a:hover {
-    color: #D9C0EC;
+    color: #E9A9FF;
+    font-weight: 600;
 }
 
 section {
     width: 100%; /* Changed from 100vw to 100% */
+
 }
 
-#hero spline-viewer {
+#spline-container {
+    width: 100%;
+    height: 100vh; /* Make it take up the full viewport height */
+
+}
+
+#transparent-div {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the background color and opacity */
+    z-index: 3; /* Place it in front of the Spline viewer (use a higher z-index) */
 }
 
 #about-me {
@@ -101,27 +151,101 @@ section {
     /* Additional Spline specific styles here */
 }
 
-
-
-#design-portfolio .grid {
+.card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax value for desired card width */
+    gap: 10px; /* Adjust the gap between cards as needed */
+    padding: 30px;
+
+}
+
+.card {
+    background-color: #100f12;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    text-decoration: none; /* Remove underline for links within the card on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.07); /* Scale up the card on hover for a slight zoom effect */
+    border: #E9A9FF;
+    text-decoration: none; /* Remove underline for links within the card on hover */
+}
+
+
+.card-img-top {
+    max-width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire container */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
     padding: 20px;
 }
 
-#design-portfolio .grid-item {
-    background-color: white;
-    border: 1px solid #ddd; /* Optional border */
-    padding: 15px;
+.card-title {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #A9D6FF, #E9A9FF); /* Example gradient from pink to orange */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;    font-weight: 900;
+
+
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: white;
+    font-weight: 100;
+
+
+}
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow chips to wrap to a new line */
+    gap: 5px; /* Add some spacing between chips */
+    font-size: 0.75rem; /* Adjust the font size as needed */
+    font-weight: 300;
+
+
+}
+
+.chip {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid dimgray;
+    border-radius: 50px;
+    color: gray;
     text-align: center;
+    margin-bottom: 5px; /* Add some bottom margin to separate chips vertically */
 }
 
-#design-portfolio .grid-item img {
-    width: 100%;
-    height: auto;
+
+
+.card-scroll-container {
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    display: flex; /* Use flexbox to lay out the cards horizontally */
+    gap: 10px; /* Adjust the gap between cards as needed */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-#design-portfolio .grid-item p {
-    margin-top: 10px;
+.card-container {
+    display: flex; /* Use flexbox to allow cards to expand horizontally */
+    flex-direction: row; /* Make cards flow horizontally */
 }
+
+.card {
+    background-color: #100f12;
+    border-radius: 10px;
+    max-width: 300px;
+    flex-shrink: 0; /* Prevent cards from shrinking to fit */
+}
+
