@@ -1,12 +1,12 @@
 /* style.css */
 body, html {
     margin: 0;
-    padding: 0;
+    place-items:center;
+
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
-    box-sizing: border-box; /* New addition */
 
 }
 h1 {
@@ -15,11 +15,12 @@ h1 {
 
     text-align: center;
     width: 100%; /* Ensures text alignment works for multiple lines */
-    background: linear-gradient(to right, #A9D6FF, #E9A9FF); /* Example gradient from pink to orange */
+    background: linear-gradient(to right, #59b1ff, #ff84ff); /* Example gradient from pink to orange */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -51,8 +52,11 @@ p {
     font-weight: 200;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit; /* New addition */
+
+section {
+    width: 100%; /* Changed from 100vw to 100% */
+    padding: 50px;
+
 }
 
 
@@ -81,7 +85,7 @@ p {
     margin: 0 0 0 20px; /* Adjust the margin to create some space between the image and text */
     font-size: 1.3em; /* Adjust the font size as needed */
     font-weight: 800;
-    background: linear-gradient(to right, #A9D6FF, #E9A9FF); /* Example gradient from pink to orange */
+    background:  linear-gradient(to right, #59b1ff, #ff84ff); /* Example gradient from pink to orange */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -109,14 +113,11 @@ p {
 }
 
 .nav-links a:hover {
-    color: #E9A9FF;
+    color: #ff84ff;
     font-weight: 600;
 }
 
-section {
-    width: 100%; /* Changed from 100vw to 100% */
 
-}
 
 #spline-container {
     width: 100%;
@@ -170,7 +171,7 @@ section {
 
 .card:hover {
     transform: scale(1.07); /* Scale up the card on hover for a slight zoom effect */
-    border: #E9A9FF;
+    border: #ff84ff;
     text-decoration: none; /* Remove underline for links within the card on hover */
 }
 
@@ -191,7 +192,7 @@ section {
     font-size: 1.25rem; /* Adjust the font size as needed */
     font-weight: bold;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #A9D6FF, #E9A9FF); /* Example gradient from pink to orange */
+    background: linear-gradient(to right, #59b1ff, #ff84ff); /* Example gradient from pink to orange */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;    font-weight: 900;
@@ -249,3 +250,29 @@ section {
     flex-shrink: 0; /* Prevent cards from shrinking to fit */
 }
 
+
+#contact .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+    gap: 50px; /* Add gap between items */
+    margin: 0 auto;
+    text-align: center; /* Center align items */
+}
+
+#contact .grid-item {
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact .grid-item p {
+    font-size: 16px; /* Adjust text size as needed */
+    margin: 0;
+}
+
+#contact .contact-icon{
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    margin-bottom: 20px; /* Add space between icon and text */
+
+}
